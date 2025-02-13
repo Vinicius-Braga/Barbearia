@@ -25,8 +25,8 @@ public class ServicoService {
         return servicoRepository.findAll();
     }
 
-    public void excluirServico(Long id) {
-        servicoRepository.deleteById(id);
+    public void excluirServico(Servico servico) {
+        servicoRepository.delete(servico);
     }
 
     public void alterarServico(Servico servico) {
